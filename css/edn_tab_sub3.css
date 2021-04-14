@@ -1,0 +1,146 @@
+/*컨텐츠1> 섹션1*/
+div.sec1{
+    overflow: hidden;
+    width: calc(100% - 10px); 
+    margin: 0 auto;
+}
+div.cnt1>.sec1>.article{
+    width: 100%; 
+    margin: 0;
+    overflow: hidden;
+    
+}
+div.cnt1>.sec1>.article>h2{
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 40px;
+ 
+}
+div.cnt1>.sec1>.article>.btn{
+    margin-top: 0;
+}
+div.cnt1>.sec1>.article>.btn>button{
+    width: calc(50% - 10px);
+    float: left;    
+    margin: 0 5px;
+    font-size: 14px;
+    position: relative;
+    height: 40px;
+}
+/*라벨 덮기*/
+div.cnt1>.sec1>.article>.btn>button>label{
+    width: 100%; height: 100%;
+    position: absolute;
+    left: 0;top: 0;
+}
+
+/*radio 버튼 지우기*/
+div.cnt1>.sec1>.article>input{
+    display: none;
+}
+
+/*액션*/
+div.cnt1>.sec1>.article>#ad:checked~.btn>button:first-of-type{
+    background-color: #fff;    
+}
+div.cnt1>.sec1>.article>#me:checked~.btn>button:nth-of-type(2){
+    background-color: #fff;    
+}
+div.cnt1>.sec1>.article:last-of-type>#ContentA:checked~.btn>button:nth-of-type(1){   background-color: #fff; }
+
+div.cnt1>.sec1>.article:last-of-type>#ContentB:checked~.btn>button:nth-of-type(2){   background-color: #fff; }
+div.cnt1>.sec1>.article:last-of-type>#ContentC:checked~.btn>button:nth-of-type(3){   background-color: #fff; }
+div.cnt1>.sec1>.article:last-of-type>#ContentD:checked~.btn>button:nth-of-type(4){   background-color: #fff; }
+
+
+div.cnt1>.sec1>.article:nth-of-type(2)>.btn>button{
+    width: calc(25% - 10px);
+    text-transform: capitalize;
+    font-size: 12px;
+    padding: 0;
+}
+
+/*컨텐츠1> 섹션2*/
+div.cnt1>.sec2>.article{
+    width: 100%;
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+div.cnt1>.sec2>.article>h2{
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 40px;
+  
+}
+div.cnt1>.sec2>.article>form>div{
+    overflow: hidden;
+    padding: 10px 0;
+    width: 50%;
+    float: left;
+}
+div.cnt1>.sec2>.article>form>div:nth-of-type(5)~div{
+    width: 100%;
+}
+div.cnt1>.sec2>.article>form>div>label{
+    width: 25%;
+    min-width: 80px;
+    display: block;
+    float: left;
+    font-size: 16px;
+    font-weight: 600;
+}
+div.cnt1>.sec2>.article>form>.agrCheck{
+    width: 100%;
+}
+div.cnt1>.sec2>.article>form>.agrCheck>label{
+    width: 100%;
+    font-weight: 700;
+    text-align: center;
+    font-size: 16px;
+}
+div.cnt1>.sec2>.article>form>div>input{
+    float: left;
+    margin: 0 5px;
+    width: calc(75% - 20px); 
+    height: 40px;
+}
+div.cnt1>.sec2>.article>form>div>input:focus{
+    background-color: #e9e5da;
+}
+div.cnt1>.sec2>.article>form>div>textarea{
+    float: left;
+    width: 85%;
+    height: 80px;
+    margin: 0 5px;
+    height: 120px;
+}
+div.cnt1>.sec2>.article>form>div>textarea:focus{
+    background-color: #e9e5da;
+    
+}
+div.cnt1>.sec2>.article>form>div>a{
+    float: left;
+    font-weight: 800;
+    margin-left: 10px;
+    text-decoration: underline;
+    font-size: 16px;
+}
+div.cnt1>.sec2>.article>form>.que>label{
+    width: calc(25% / 2);
+}
+div.cnt1>.sec2>.article>form>.agr>label{
+    width: calc(25% / 2);    
+}
+
+div.cnt1>.sec2>.article>form>.btn{}
+div.cnt1>.sec2>.article>form>.btn>button{
+    width:85%;
+    margin-left: calc(25% /2);
+    margin-right: 5px;
+}
+div.cnt1>.sec2>.article>form>.btn>button:hover{
+    background-color: #fff;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+

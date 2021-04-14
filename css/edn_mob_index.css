@@ -1,0 +1,68 @@
+/*컨텐츠*/
+div.content{
+}
+div.content>.section{
+    overflow: hidden;
+}
+div.content>.header{
+    text-align: center;
+}
+
+div.content>.section>.article{
+    width: calc( 50% - 20px );
+    float: left;
+    position: relative;
+    margin: 10px;
+    background-color: #fff;
+}
+div.content>.section>.article>.image{
+    width: 100%;
+    height: 160px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+}
+div.content>.section>.article>.i1{
+    background-image: url(../img/edn_tab_i1.jpg);
+}
+div.content>.section>.article>.i2{
+    background-image: url(../img/edn_tab_i2.jpg); 
+}
+div.content>.section>.article>.i3{
+    background-image: url(../img/edn_tab_i3.jpg); 
+}
+div.content>.section>.article>.i4{
+    background-image: url(../img/edn_tab_i4.jpg);
+}
+div.content>.section>.article>.i5{
+     background-image: url(../img/edn_tab_i5.jpg);
+}
+div.content>.section>.article>.i6{
+     background-image: url(../img/edn_tab_i6.jpg);
+}
+div.content>.section>.article>.i7{
+     background-image: url(../img/edn_tab_i7.jpg);
+}
+div.content>.section>.article>.i8{
+     background-image: url(../img/edn_tab_i8.jpg);
+}
+
+
+div.content>.section>.article>.segment{
+    height: 40px;
+}
+div.content>.section>.article>.segment>h2{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    bottom: 10px; left: 0; right: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+div.content>.section>.article>.segment>a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+

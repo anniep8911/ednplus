@@ -1,0 +1,275 @@
+/*메인*/
+div.main{
+    width: 100vw;
+}
+div.main>.image{
+    width: 100%;
+    height: 720px;
+    background-color: #ccc;
+    background-image: url(../img/edn_index_main..jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+div.main>.mnWrap{
+    width: 100%;
+}
+div.main>.mnWrap>.menu{
+    overflow: hidden;
+    width: 80%;
+    margin-top: -60px;
+    margin-left: 20%;
+    background-color: #e9e5da;
+}
+div.main>.mnWrap>.menu>ul{
+    overflow: hidden;
+    float: left;
+    margin: 40px 0;
+}
+div.main>.mnWrap>.menu>ul>li{
+    font-weight:bold;
+    font-size:18px;
+    line-height:40px;
+    float: left;
+    margin:0 50px;
+    padding: 0;
+}
+
+/*콘텐츠1*/
+div.ct1{
+    width: 90%;
+    max-width: 1060px;
+    padding-top: 120px;
+}
+
+div.ct1>.header{
+    text-align: left;
+    overflow: hidden;
+}
+div.ct1>.header>h2{}
+div.ct1>.header>ul{
+    float: right;
+    margin-top: 40px;
+    position: relative;
+}
+div.ct1>.header>ul>li{
+    float: left;
+    margin: 0 20px;
+}
+div.ct1>.header>ul>.dot{
+    color: #f6cece;
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 40px;
+    overflow: hidden;
+    
+}
+div.ct1>.header>ul>.dot>li{
+    float: left;
+}
+div.ct1>.header>ul>.dot>li:last-of-type{
+    margin-left: 80px;
+    color: #fff;
+}
+
+/*도트 hover*/
+div.ct1>.header>ul>li:last-of-type:hover+.dot>li:first-of-type{
+    color: #fff;
+}
+div.ct1>.header>ul>li:last-of-type:hover+.dot>li:last-of-type{
+    color: #f6cece;
+}
+
+
+/*hover 끝*/
+div.ct1>.section{
+    margin: 40px auto 0 auto;
+    position: relative;
+}
+div.ct1>.section::after{
+    display: block;
+    content: '';
+    clear: both;
+}
+div.ct1>.section>.btnWrap{
+    position: absolute;
+    height: 80px;
+    margin: auto 0;
+    top: 0; bottom: 0;
+    font-size: 72px;
+    width: 100%;
+    cursor: pointer; 
+}
+
+div.ct1>.section>.btnWrap>.btnPrev{
+    float: left;
+    margin-left: -5%;
+}
+div.ct1>.section>.btnWrap>.btnNext{
+    float: right;
+    margin-right: -5%;
+}
+div.ct1>.section>div{
+    float: left;
+}
+div.ct1>.section>.article{
+    float: left;
+    width:calc(100% / 4 - 20px);
+    height:280px;
+    background-color: #ccc;
+    margin: 0 10px;
+    position: relative;
+    z-index: 20;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div.ct1>.section>.pt1{background-image: url(../img/edn_index_ptn_cj.jpg);}
+div.ct1>.section>.pt2{background-image: url(../img/edn_index_ptn_cl.jpg);}
+div.ct1>.section>.pt3{background-image: url(../img/edn_index_ptn_gm.jpg);}
+div.ct1>.section>.pt4{background-image: url(../img/edn_index_ptn_wn.jpg);}
+
+/*콘텐츠2*/
+div.bg1{
+    background-color: #d4afa7;
+}
+div.cntWrap>.ct2{
+    width: 90%;
+    max-width: 1060px;
+}
+div.ct2>.header{}
+div.ct2>.header>h2{}
+div.ct2>.header>p{}
+div.ct2>.section{
+    overflow: hidden;
+    margin: 0 auto;
+}
+div.ct2>.section>.article{
+    width: calc(100% / 4 );
+    float: left;
+    position: relative;
+}
+div.ct2>.section>.article>.image{
+    background-color: #CCC;
+    height: 480px;
+    -webkit-filter: grayscale(100%);filter: gray;
+}
+div.ct2>.section>.article>.i1{background-image: url(../img/edn_index_rec_pr.jpg);}
+div.ct2>.section>.article>.i2{background-image: url(../img/edn_index_rec_sr.jpg);}
+div.ct2>.section>.article>.i3{background-image: url(../img/edn_index_rec_ut.jpg);}
+div.ct2>.section>.article>.i4{background-image: url(../img/edn_index_rec_ps.jpg);}
+div.ct2>.section>.article>.segment{
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%, 0);
+    width: 90%;
+    text-align: center;
+}
+div.ct2>.section>.article:nth-of-type(2)>.segment{ top: 10%; }
+div.ct2>.section>.article:nth-of-type(4)>.segment{ top: 10%; }
+div.ct2>.section>.article>.segment>h3{
+   height: 80px; overflow: hidden;
+}
+div.ct2>.section>.article>.segment>button{
+    width: 120px; height: 40px;  text-transform: uppercase;
+    background-color: #ccc; border: 0;
+    color: #fff; cursor: pointer;
+    transition: all 0.3s;
+}
+
+/*a태그로 덮기*/
+div.ct2>.section>.article>a{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;top: 0;
+    z-index: 20;
+}
+/*a태그 hover*/
+div.ct2>.section>.article>a:hover~.image{
+    -webkit-filter: grayscale(0%);
+}
+div.ct2>.section>.article>a:hover~.segment>button{
+    background-color: #d4afa7;
+}
+
+
+
+/*콘텐츠3*/
+div.cntWrap{}
+div.ct3{
+    padding-bottom: 120px;
+}
+div.ct3>.header{
+    position: relative;
+    margin: 0 10px;
+}
+div.ct3>.header>h2{}
+div.ct3>.header>h3{}
+div.ct3>.header>.news{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 120px;
+}
+div.ct3>.header>.news>h2{}
+div.ct3>.header>.news>ul{
+    float: right;
+    background-color: #ccc;
+    padding: 10px;
+}
+div.ct3>.header>.news>ul>li{
+    overflow: hidden;
+}
+div.ct3>.header>.news>ul>li>p>a:hover{
+    text-decoration: underline;
+}
+div.ct3>.header>.news>ul>li:first-of-type{
+    font-size: 24; font-weight: bold; line-height: 40px;
+}
+div.ct3>.header>.news>ul>li>p{
+    float: left;
+    line-height: 20px;
+}
+div.ct3>.header>.news>ul>li>p:nth-of-type(2){
+    margin-left: 50px;
+}
+
+div.ct3>.section{
+}
+div.ct3>.section::after{
+    display: block;
+    content: '';
+    clear: both;
+    
+}
+div.ct3>.section>.article{
+    width: calc(100% /4 - 20px);
+    float: left;
+    height: 280px;
+    position: relative;
+    background-color: #ccc;
+    margin: 120px 10px 0 10px;
+    position: relative;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+div.ct3>.section>.art1{background-image: url(../img/edn_index_news_new.jpg);}
+div.ct3>.section>.art2{background-image: url(../img/edn_index_news_pol.jpg);}
+div.ct3>.section>.art3{background-image: url(../img/edn_index_news_pro.jpg);}
+div.ct3>.section>.art4{background-image: url(../img/edn_index_news_even.jpg);}
+div.ct3>.section>.article>h4{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%,0);
+    font-size: 16px; font-weight: bold;
+}
+div.ct3>.section>.article>a{
+    width: 100%; height: 100%;
+    position: absolute;
+    top: 0;left: 0;
+}

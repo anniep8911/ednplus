@@ -1,0 +1,77 @@
+/*컨텐츠*/
+div.content{
+}
+div.content>.section{
+    overflow: hidden;
+}
+div.content>.header{
+    text-align: center;
+}
+
+div.content>.section>.article{
+    width: 47%;
+    min-width: 170px;
+    float: left;
+    margin: 1.5%;
+    overflow: hidden;
+    background-color: #fff;
+    position: relative;
+}
+div.content>.section>.article>.image{
+    width: 50%;
+    min-width: 171px;
+    height: 180px;
+    float: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+div.content>.section>.article>.i1{
+    background-image: url(../img/edn_tab_i1.jpg);
+}
+div.content>.section>.article>.i2{
+    background-image: url(../img/edn_tab_i2.jpg); 
+}
+div.content>.section>.article>.i3{
+    background-image: url(../img/edn_tab_i3.jpg); 
+}
+div.content>.section>.article>.i4{
+    background-image: url(../img/edn_tab_i4.jpg);
+}
+div.content>.section>.article>.i5{
+     background-image: url(../img/edn_tab_i5.jpg);
+}
+div.content>.section>.article>.i6{
+     background-image: url(../img/edn_tab_i6.jpg);
+}
+div.content>.section>.article>.i7{
+     background-image: url(../img/edn_tab_i7.jpg);
+}
+div.content>.section>.article>.i8{
+     background-image: url(../img/edn_tab_i8.jpg);
+}
+
+div.content>.section>.article>.segment{
+    width: 50%;
+    min-width: 171px;
+    text-align: center;
+    padding: 18% 3%;
+    font-size: 16px;
+    font-weight: 600;
+    float: left;
+    
+}
+div.content>.section>.article>.segment>h2{
+    height: 40px;
+}
+div.content>.section>.article>.segment>a{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;top: 0;
+    
+}
+
+
+

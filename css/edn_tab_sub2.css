@@ -1,0 +1,100 @@
+/*콘텐츠1*/
+div.cnt1>.section{
+    margin-top: 40px;
+}
+div.cnt1>.section>.article{
+    width: calc(100% / 4 - 50px);
+    height: 120px;
+    float: left;
+    margin: 0 25px;
+}
+div.cnt1>.section>.article>.image{
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+div.cnt1>.section>.article>.i1{background-image: url(../img/edn_index_news_new.jpg);}
+div.cnt1>.section>.article>.i2{background-image: url(../img/edn_index_news_pol.jpg);}
+div.cnt1>.section>.article>.i3{background-image: url(../img/edn_index_news_pro.jpg)}
+div.cnt1>.section>.article>.i4{background-image: url(../img/edn_index_news_even.jpg)}
+div.cnt1>.section>.btn>button{
+    background-color: #fff;
+    width: 340px;
+}
+div.cnt1>.section>.btn>button:hover{
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+
+
+/*콘텐츠2*/
+div.cnt2{
+    margin-top: 40px;
+}
+div.cnt2>.header{
+    padding: 0 0 20px 0;
+}
+div.cnt2>.header>.search{
+    width: 340px;
+    height: 40px;
+    background-color: #fff;
+    float: right;
+}
+div.cnt2>.header>.search>input{
+    border: 0;
+    height: 40px;
+    width: 300px;
+}
+
+div.cnt2>.section>.article{
+    width: calc(100% - 20px);
+    overflow: hidden;
+    height: 80px;
+    border-top: 1px solid #ccc;
+    margin: 0 10px;
+}
+div.cnt2>.section>.article>.image{
+    width: 120px;
+    height: 80px;
+    background-color: #fff;
+    float: left;
+    background-image: url(../img/pc_sub2_con2.i1.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+ 
+}
+div.cnt2>.section>.article>.segment{
+    padding: 10px 20px;
+    overflow: hidden;
+    
+    
+}
+div.cnt2>.section>.article>.segment>h2{
+    font-size: 14px;
+    line-height: 20px;
+    float: left;
+}
+div.cnt2>.section>.article>.segment>p{
+    height: 40px;
+    overflow: hidden;
+    float: left;
+}
+div.cnt2>.section>.article>.segment>h2:last-of-type{
+    float: right;
+}
+div.cnt2>.section>.btn{
+    margin-top: 0;
+}
+div.cnt2>.section>.btn>button{
+    width: calc(100% - 20px);
+    
+}
+div.cnt2>.section>.btn>button:hover{
+    background-color: #fff;
+}
+

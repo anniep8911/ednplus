@@ -1,0 +1,326 @@
+div.cntWrap.mn{
+    background-color: #d4afa7;    
+    background-image: url(../img/pc_sub1_main.png);
+    background-position: top right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+div.cntWrap.mn>.content>.header{
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+
+/*컨텐츠1*/
+div.cnt1{
+    background-color: #e9e5da;
+    overflow: hidden;
+}
+div.cnt1>.content>.header{
+    text-align: center;
+}
+div.cnt1>.content>.section{
+    padding: 40px 0 120px 0;
+    margin-top: 80px;
+}
+div.cnt1>.content>.section>.article{
+    margin-top: 120px;
+}
+div.cnt1>.content>.section>.article>.image{
+    width: 160px; height: 160px; background-color: #666;
+    border-radius: 50%;
+     -webkit-filter: grayscale(100%);filter: gray;
+    transition: all 0.2s;
+    position: relative;
+     background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+div.cnt1>.content>.section>.article>.image{
+    
+}
+div.cnt1>.content>.section>.article>.image>label{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;left: 0;
+}
+
+div.cnt1>.content>.section>.article>.i1{
+    background-image: url(../img/pc_sub1_con1_i1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+div.cnt1>.content>.section>.article>.i2{
+    background-image: url(../img/pc_sub1_con1_i2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+div.cnt1>.content>.section>.article>.i3{
+    background-image: url(../img/pc_sub1_con1_i3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+div.cnt1>.content>.section>.article>.i4{
+    background-image: url(../img/pc_sub1_con1_i4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+div.cnt1>.content>.section>.article>.i5{
+    background-image: url(../img/pc_sub1_con1_i5.jpg);
+    background-position: center;
+    background-size: cover;
+}
+div.cnt1>.content>.section>.article>.i6{
+    background-image: url(../img/pc_sub1_con1_i6.jpg);
+    background-position: center;
+    background-size: cover;
+}
+div.cnt1>.content>.section>.article>.i7{
+    background-image: url(../img/pc_sub1_con1_i7.jpg);
+    background-position: center;
+    background-size: cover;
+}
+div.cnt1>.content>.section>.article>.i8{
+    background-image: url(../img/pc_sub1_con1_i8.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/*왼쪽섹션*/
+div.cnt1>.content>.secL{
+    width: 50%;
+    float: left;
+    border-right: 2px solid  #d4afa7;
+}
+div.cnt1>.content>.secL>.article{
+    overflow: hidden;
+}
+div.cnt1>.content>.secL>.article:first-of-type{
+    margin-top: 0;
+}
+div.cnt1>.content>.secL>.article>.image{
+    float: left;
+}
+div.cnt1>.content>.secL>.article>.segment{
+    float: left;
+}
+
+/*오른쪽섹션*/
+div.cnt1>.content>.secR{
+    width: 50%;
+    overflow: hidden;
+    float: right;
+}
+div.cnt1>.content>.secR>.article{
+    float: right;
+}
+div.cnt1>.content>.secR>.article:first-of-type{
+    margin-top: 0;
+}
+div.cnt1>.content>.secR>.article>.image{
+    float: right;
+}
+div.cnt1>.content>.secR>.article>.segment{
+    float: right;
+    text-align: right;
+}
+
+
+/*라디오 숨기기*/
+div.cnt1>.content>input{
+    display: none;
+}
+
+/*라디오 액션*/
+div.cnt1>.content>#prefer1:checked~.secL>.article>.i1{
+    background-color: #fff;
+    border: 10px solid  #d4afa7;
+    -webkit-filter: grayscale(0%);filter: gray;
+}
+div.cnt1>.content>#prefer2:checked~.secL>.article>.i2{
+    background-color: #fff;
+    border: 10px solid  #d4afa7;
+    -webkit-filter: grayscale(0%);filter: gray;
+}
+div.cnt1>.content>#prefer3:checked~.secL>.article>.i3{
+    background-color: #fff;
+    border: 10px solid  #d4afa7;
+    -webkit-filter: grayscale(0%);filter: gray;
+}
+div.cnt1>.content>#prefer4:checked~.secL>.article>.i4{
+    background-color: #fff;
+    border: 10px solid  #d4afa7;
+    -webkit-filter: grayscale(0%);filter: gray;
+}
+div.cnt1>.content>#prefer5:checked~.secR>.article>.i5{
+    background-color: #fff;
+    border: 10px solid  #d4afa7;
+    -webkit-filter: grayscale(0%);filter: gray;
+}
+div.cnt1>.content>#prefer6:checked~.secR>.article>.i6{
+    background-color: #fff;
+    border: 10px solid  #d4afa7;
+    -webkit-filter: grayscale(0%);filter: gray;
+}
+div.cnt1>.content>#prefer7:checked~.secR>.article>.i7{
+    background-color: #fff;
+    border: 10px solid  #d4afa7;
+    -webkit-filter: grayscale(0%);filter: gray;
+}
+div.cnt1>.content>#prefer8:checked~.secR>.article>.i8{
+    background-color: #fff;
+    border: 10px solid  #d4afa7;
+    -webkit-filter: grayscale(0%);filter: gray;
+}
+/*액션 끝 */
+
+
+/*hover 액선 : image에 적용*/
+div.cnt1>.content>.section>.article>.image:hover{
+    border: 10px solid  #d4afa7;
+    -webkit-filter: grayscale(0%);filter: gray;
+}
+div.cnt1>.content>.section>.article>.image:first{
+    
+}
+div.cnt1>.content>.section>.article>.segment{
+    width: 260px;
+    overflow: hidden;
+    margin: 10px 20px;
+}
+div.cnt1>.content>.section>.article>.segment>p{
+    height: 80px;
+    overflow: hidden;
+}
+div.cnt1>.content>.btn{
+    text-align: center;
+}
+
+/*hover액션 :버튼에 적용*/
+div.cnt1>.content>.btn>button{
+    width: 60%;
+    height: 80px;
+    color: #fff;
+    background-color: #d4afa7;
+    font-size: 30px;font-weight: bold;
+    cursor: pointer;
+    border: 0px;
+    transition: all 0.2s;
+}
+div.cnt1>.content>.btn>button:hover{
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    background-color: #fff;
+    color: #d4afa7;
+}
+
+
+
+/*컨텐츠2*/
+div.cnt2{
+    background-color: #d4afa7;
+    padding-bottom: 60px;
+}
+div.cnt2>.header{
+    text-align: center;
+}
+div.cnt2>.header>h2{
+    line-height: 120px;
+}
+div.cnt2>.header>p{
+    width: 320px;
+    height: 80px;
+    overflow: hidden;
+    margin: 0 auto;
+    
+}
+div.cnt2>.section{
+    margin-top: 40px;   
+}
+div.cnt2>.section>.article{
+    width: calc( 100% / 3 - 20px );
+    text-align: center;
+    float: left;
+    margin: 0 10px;
+    background-color: #fff;
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+    position: relative;
+}
+
+
+div.cnt2>.section>.article>.image{
+    height: 280px; background-color: #ccc;
+    -webkit-filter: grayscale(100%);filter: gray;
+    transition: all 0.2s;
+    
+}
+div.cnt2>.section>.article>.i1{
+    background-image: url(../img/pc_sub1_con2_i1.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+div.cnt2>.section>.article>.i2{
+    background-image: url(../img/pc_sub1_con2_i2.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+div.cnt2>.section>.article>.i3{
+    background-image: url(../img/pc_sub1_con2_i3.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+
+div.cnt2>.section>.article>.segment{
+    padding: 40px 20px;
+}
+div.cnt2>.section>.article>.segment>p{
+    height: 80px; overflow: hidden;
+}
+div.cnt2>.section>.article>.segment>.btn{}
+div.cnt2>.section>.article>.segment>.btn>button{
+    margin-top: 30px;
+    width: 80%; height: 40px;
+    background-color: #ccc;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #FFF;
+    border: 0px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+/*a태그로 덮기*/
+div.cnt2>.section>.article>a{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+/*컨텐츠2 hover액션*/
+div.cnt2>.section>.article>a:hover+.image{
+  -webkit-filter: grayscale(0%);
+}
+div.cnt2>.section>.article>a:hover~.segment>.btn>button{
+    background-color: #d4afa7;
+}
+div.cnt2>.section>.article>a:hover~.segment{
+    color: #000;
+    transition: all 0.2s;
+}
+/*액션 끝*/
+
+/*대각선 수정*/
+*.top::before{
+    border-top: 280px solid #d4afa7;
+}
+*.bot::after{
+    border-right: 100vw solid #e9e5da;
+}

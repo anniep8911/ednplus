@@ -1,0 +1,184 @@
+div.cntWrap.mn{
+    background-color: #e9e5da;
+    background-image: url(../img/pc_sub2_main.png);
+    background-position: 70% 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+div.mn>.header{
+    color: #000;
+}
+
+/*컨텐츠1*/
+div.cnt1{
+    background-color: #d4afa7;
+    color: #fff;
+    text-align: center;
+}
+div.cnt1>.header{}
+div.cnt1>.header>h2{}
+div.cnt1>.header>h3{
+    font-size: 18px;
+    line-height: 30px;
+}
+div.cnt1>.section>.article{
+    width: calc(100% / 4 - 100px);
+    float: left;
+    margin: 40px 50px 0;
+}
+div.cnt1>.section>.article>.image{
+    height: 160px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+div.cnt1>.section>.article>.i1{
+    background-image: url(../img/edn_index_news_new.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+div.cnt1>.section>.article>.i2{
+     background-image: url(../img/edn_index_news_pol.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+div.cnt1>.section>.article>.i3{
+     background-image: url(../img/edn_index_news_pro.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+div.cnt1>.section>.article>.i4{
+     background-image: url(../img/edn_index_news_even.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+div.cnt1>.section>.btn{}
+div.cnt1>.btn>button{
+    width: 350px;
+    height: 40px;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 80px;
+    cursor: pointer;
+    border: 0;
+    font-weight: 700;
+    transition: all 0.3s;
+}
+div.cnt1>.btn>button:hover{
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+
+/*컨텐츠2*/
+div.cnt2{
+    background-color: #e9e5da;
+    padding-bottom: 60px;
+}
+div.cnt2>.search{
+    width: 320px;
+    height: 40px;
+    background-color: #fff;
+    margin: 0 0 0 auto;
+    position: relative;
+
+}
+div.cnt2>.search>input{
+    width:90%;
+    height: 100%;
+    border: 0;
+    position: absolute;
+    left: 0; top: 0;
+    transition: all 0.3s;
+}
+div.cnt2>.search>i{
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    text-align: center;
+    line-height: 40px;
+    right: 0;
+    transition: all 0.3s;
+}
+div.cnt2>.search>input:focus{
+    background-color: #d4afa7;
+    color: #fff;
+}
+div.cnt2>.search>input:focus~i{
+    color: #fff;
+    background-color: #d4afa7;
+}
+
+div.cnt2>.search>label{
+    background-color: #fff;
+}
+div.cnt2>.search>label>input{
+    border: 0px;
+    width: 90%;
+    margin-left: 10px;
+}
+div.cnt2>.search>label>i{
+    cursor: pointer;
+    line-height: 40px;
+}
+
+div.cnt2>.section{
+    margin-top: 40px;
+}
+div.cnt2>.section>.article{
+    overflow: hidden;
+    border-top: 1px solid #999;
+}
+div.cnt2>.section>.article>.image{
+    width: 350px;
+    height: 240px;
+    background-color: #ccc;
+    float: left;
+    background-image: url(../img/pc_sub2_con2.i1.jpg);
+}
+div.cnt2>.section>.article>.segment{
+    width: 700px;
+    float: left;
+    padding: 40px 0 40px 20px;
+}
+div.cnt2>.section>.article>.segment>h3{
+    font-size: 18px; float: left;
+}
+div.cnt2>.section>.article>.segment>h4{
+    font-size: 18px; float: right;
+}
+div.cnt2>.section>.article>.segment>p{
+    font-size: 14px;
+    height: 120px;
+    overflow: hidden;
+    float: left;
+}
+div.cnt2>.btn>button{
+    width: 100%;
+    height: 40px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+    background-color: #d4afa7;
+    border: 0px;
+    transition: all 0.3s;
+}
+div.cnt2>.btn>button:hover{
+    background-color: #fff;
+    color: #d4afa7;
+}
+
+
+/*대각선 수정*/
+*.top::before{
+    border-top: 280px solid #e9e5da;
+}
+*.bot::after{
+    border-right: 100vw solid #d4afa7;
+}
+div.cnt1.bot::after{
+    border-right: 100vw solid #e9e5da;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/edn_tab_common.css">
+    <link rel="stylesheet" href="css/edn_tab_sub3.css">
+</head>
+
+<body>
+    <? include 'inc/head_tab.html' ?>
+
+    <!--컨텐츠1-->
+    <div class="content cnt1">
+        <div class="section sec1">
+            <div class="article">
+                <h2>문의주실 서비스 유형은 무엇인가요?</h2>
+                <input type="radio" name="survice" id="ad">
+                <input type="radio" name="survice" id="me">
+                <div class="btn">
+                    <button><label for="ad">광고상품</label></button>
+                    <button><label for="me">미디어네트워크</label></button>
+                </div>
+            </div>
+            <div class="article">
+                <h2>문의주실 상품 유형은 무엇인가요?</h2>
+                <input type="radio" name="product" id="ContentA">
+                <input type="radio" name="product" id="ContentB">
+                <input type="radio" name="product" id="ContentC">
+                <input type="radio" name="product" id="ContentD">
+                <div class="btn">
+                    <button><label for="ContentA">ContentA</label></button>
+                    <button><label for="ContentB">ContentB</label></button>
+                    <button><label for="ContentC">ContentC</label></button>
+                    <button><label for="ContentD">ContentD</label></button>
+                </div>
+            </div>
+        </div>
+        <div class="section sec2">
+            <div class="article">
+                <h2>성실히 답변드릴 수 있도록 고객님에 대해 알려주세요.</h2>
+                <form>
+                    <div class="name">
+                        <label for="name">이름</label>
+                        <input type="text" id="name">
+                    </div>
+                    <div class="com">
+                        <label for="com">회사명</label>
+                        <input type="text" id="com">
+                    </div>
+                    <div class="mob">
+                        <label for="mob">연락처</label>
+                        <input type="tel" id="mob">
+                    </div>
+                    <div class="mail">
+                        <label for="mail">이메일</label>
+                        <input type="email" id="mail">
+                    </div>
+                    <div class="web">
+                        <label for="web">사이트</label>
+                        <input type="text" id="web">
+                    </div>
+                    <div class="que">
+                        <label for="que">문의내용</label>
+                        <textarea id="que"></textarea>
+                    </div>
+                    <div class="agr">
+                        <label for="">약관동의</label>
+                        <a href="http://www.ednplus.co.kr/privacypolicy">약관확인하기</a>
+                    </div>
+                    <div class="agrCheck">
+                        <label for="agrCheck"><input type="checkbox" id="agrCheck">개인정보 수집이용에 동의합니다.</label>
+                    </div>
+                    <div class="btn">
+                        <button>전송하기</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <? include 'inc/tail_tab.html' ?>
+</body>
+
+</html>

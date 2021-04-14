@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+     <!--뷰포트 설정 :컨텐츠의 너비를 디바이스 너비만큼 맞추겠다고 설정-->
+    <meta name="viewport" content="width=device-width">
+    
+    <title>EDNPlus</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/edn_common.css">
+    <link rel="stylesheet" href="css/ednplus_index.css">
+    <script>
+       /*변수 : 브라우저 정보저장*/ 
+        var brow = navigator.userAgent;
+        console.log(brow);
+        if(brow.match('ios | Android | Symbian | Apple | Samsung | LG | Blackberry | iPhone | Gallaxy')){
+           /*조건이 참이면 실행하게됨*/
+           window.location.href = 'edn_mob_index.html'
+           }else if(brow.match('iPad')){
+           window.location.href = 'edn_tab_index.html'
+           }
+    </script>
+</head>
+
+<body>
+    <!--php 외부문서 불러오는 구간-->
+    <? include 'inc/head.html' ?>
+
+    <!--메인-->
+    <div class="main">
+        <div class="image"></div>
+        <div class="mnWrap">
+            <div class="menu">
+                <ul>
+                    <li><a href="edn_sub1.html">맞는상품 확인하기</a></li>
+                    <li><a href="edn_sub2.html">뉴스</a></li>
+                    <li><a href="edn_sub3.html">문의하기</a></li>
+                    <li><a href="">유저 타게팅</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--콘텐츠1:: 파트너쉽-->
+    <div class="cntWrap">
+        <div class="content ct1">
+            <div class="header">
+                <h2>Partnership</h2>
+                <h3>200년, 현재까지 200개의 파트너와 함께합니다.</h3>
+                <ul>
+                    <li><a href="">advertise</a></li>
+                    <li><a href="">media</a></li>
+                    <ul class="dot">
+                        <li><i class="fas fa-circle"></i></li>
+                        <li><i class="fas fa-circle"></i></li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="section">
+                <div class="article pt1"></div>
+                <div class="article pt2"></div>
+                <div class="article pt3"></div>
+                <div class="article pt4"></div>
+                <div class="btnWrap">
+                    <div class="btnPrev"><i class="fas fa-chevron-left"></i></div>
+                    <div class="btnNext"><i class="fas fa-chevron-right"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--대각선 배경-->
+    <div class="bg lt"></div>
+
+    <!--콘텐츠2:: 추천 -->
+    <div class="cntWrap bg1 top bot">
+        <div class="content ct2">
+            <div class="header">
+                <h2>Recommended</h2>
+                <h3>EDN Plus에서 추천드리는 상품입니다.</h3>
+            </div>
+            <div class="section">
+                <div class="article">
+                    <a href=""></a>
+                    <div class="image i1"></div>
+                    <div class="segment">
+                        <h3>Product <br>Remarketing AD</h3>
+                        <button>view more</button>
+                    </div>
+                </div>
+                <div class="article">
+                    <a href=""></a>
+                    <div class="image i2"></div>
+                    <div class="segment">
+                        <h3>Site <br>RemarketingAD</h3>
+                        <button>view more</button>
+                    </div>
+                </div>
+                <div class="article">
+                    <a href=""></a>
+                    <div class="image i3"></div>
+                    <div class="segment">
+                        <h3>User <br>RemarketingAD</h3>
+                        <button>view more</button>
+                    </div>
+                </div>
+                <div class="article">
+                    <a href=""></a>
+                    <div class="image i4"></div>
+                    <div class="segment">
+                        <h3>AD Posting</h3>
+                        <button>view more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--대각선 배경-->
+    <div class="bg rt"></div>
+
+    <!--콘텐츠3:: 뉴스-->
+    <div class="cntWrap">
+        <div class="content ct3">
+            <div class="header">
+                <h2>EDNPlus News</h2>
+                <h3>EDN Plus의 최근 프로모션, 신규상품 소식</h3>
+                <div class="news">
+                    <ul>
+                        <li>공지사항</li>
+                        <li>
+                            <p><a href="edn_sub2.html">[일반]EDNPlus의 개인정보 처리방침 변경안내</a></p>
+                            <p>2021-01-04</p>
+                        </li>
+                        <li>
+                            <p><a href="edn_sub2.html">[일반]EDNPlus의 개인정보 처리방침 변경안내</a></p>
+                            <p>2021-01-04</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section">
+                <div class="article art1">
+                    <h4>EDN Plus신규소식</h4>
+                    <a href="edn_sub2.html"></a>
+                </div>
+                <div class="article art2">
+                    <h4>개인정보 처리방침</h4>
+                    <a href="edn_sub2.html"></a>
+                </div>
+                <div class="article art3">
+                    <h4>신상품</h4>
+                    <a href="edn_sub1.html"></a>
+                </div>
+                <div class="article art4">
+                    <h4>이벤트</h4>
+                    <a href="edn_sub2.html"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--php 외부문서 불러오는 구간-->
+    <? include 'inc/tail.html' ?>
+
+</body>
+
+</html>

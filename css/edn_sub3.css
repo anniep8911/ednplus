@@ -1,0 +1,215 @@
+div.cntWrap.mn{
+    background-image: url(../img/pc_sub3_main.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 70% 90%;
+}
+
+div.cntWrap{
+    background-color: #d4afa7;
+}
+
+div.cnt1{
+    background-color: #fff;
+}
+
+/*전체버튼 설정*/
+*>button{
+    border: 0px;
+    cursor: pointer;
+    background-color: #ccc;
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 80px;
+    transition: all 0.3s;
+    
+}
+*>button:hover{
+    background-color: #d4afa7;
+}
+
+/*컨텐츠1*/
+div.cnt1{
+    background-color: #e9e5da;
+}
+
+/*체크박스 숨기기*/
+div.sec1>.article>input{
+    display: none;
+}
+
+/*라벨 덮기*/
+div.sec1>.article>.btn>button{
+    height: 80px;
+    position: relative;
+}
+div.sec1>.article>.btn>button>label{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;top: 0;
+    cursor: pointer;
+}
+/*라벨 덮기 끝 */
+
+
+/*버튼 액션*/
+div.sec1>.article>#ad:checked~.btn>button:nth-of-type(1){
+     background-color: #d4afa7;
+}
+div.sec1>.article>#me:checked~.btn>button:nth-of-type(2){
+    background-color: #d4afa7;
+}
+div.sec1>.article>#conA:checked~.btn>button:nth-of-type(1){
+    background-color: #d4afa7;
+}
+div.sec1>.article>#conB:checked~.btn>button:nth-of-type(2){
+    background-color: #d4afa7;
+}
+div.sec1>.article>#conC:checked~.btn>button:nth-of-type(3){
+    background-color: #d4afa7;
+}
+div.sec1>.article>#conD:checked~.btn>button:nth-of-type(4){
+    background-color: #d4afa7;
+}
+
+
+
+
+div.inputSec>form>label{
+    display: block;
+}
+div.sec1>.article>h2{
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 120px;
+}
+div.sec1>.art1>.btn>button{
+    width: calc( 100% / 3 - 20px);
+    margin: 0 10px;
+}
+div.sec1>.art2>.btn>button{
+    width: calc( 100% / 4 - 23px);
+    margin: 0 10px;
+}
+div.sec2>h2{
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 120px;
+}
+div.sec2>.inputSec>form>div{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin-top: 40px;
+}
+div.sec2>.inputSec>form>div:first-of-type{
+    margin-top: 0;
+}
+div.sec2>.inputSec>form>div>label{
+    width: 180px;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    float: left;
+}
+div.sec2>.inputSec>form>div>textarea{
+    width: 70%;
+    transition:all 0.3s;
+}
+div.sec2>.inputSec>form>div>textarea:focus{
+    background-color: #d4afa7;
+    color: #fff;
+}
+div.sec2>.inputSec>form>div>input{
+    width: 70%;
+    height: 40px;
+    transition: all 0.3s;
+}
+
+/*입력창 포커스 액션*/
+div.sec2>.inputSec>form>div>input:focus{
+    background-color: #d4afa7;
+    color: #fff;
+}
+div.sec2>.inputSec>form>.att>button{
+    height: 40px;
+    float: right;
+    line-height: 0;
+    width: 12%;
+    font-size: 14px;
+    background-color: #ccc;
+    color: #000;
+}
+div.sec2>.inputSec>form>.mail>input{
+    width: calc(50% / 2);
+}
+div.sec2>.inputSec>form>.mail>select{
+    height: 40px;
+    width: calc(70% / 3);
+}
+div.sec2>.inputSec>form>.agr>ul{
+    float: left;
+    width: 80%;
+    height: 500px;
+    overflow-y: scroll;
+}
+div.sec2>.inputSec>form>.agr>ul>li{
+    font-size: 14px;
+    margin-top: 40px;
+}
+div.sec2>.inputSec>form>.agr>ul>li:first-of-type{
+    margin-top: 0;
+}
+
+div.sec2>.inputSec>form>.agr>.agrCheck{
+    float: left;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 40px;
+    width: 100%;
+    text-align: center;
+}
+div.sec2>.inputSec>form>.agr>.agrCheck>label{
+    cursor: pointer;
+}
+div.sec2>.inputSec>form>.btn{
+    text-align: center;
+}
+div.sec2>.inputSec>form>.btn>button{
+    width: 540px;
+}
+
+
+
+
+
+/*컨텐츠2*/
+div.cnt2>.header>h2{
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+div.map{
+    width: 100%;
+    height: 520px;
+    background-color: #ccc;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/map.jpg.png);
+}
+
+
+/*대각선 수정*/
+*.top::before{
+    border-top: 280px solid #d4afa7;
+}
+*.bot::after{
+    border-right: 100vw solid #d4afa7;
+}
