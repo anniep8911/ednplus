@@ -114,7 +114,7 @@ div.header>input{
 /*사이드바 덮기*/
 div.header>.sidebar{
     width: 100%;
-    height: calc(100% - 140px);
+    height:110vh;
     position: absolute;
     top: 100px;
     background-color: #d4afa7;
